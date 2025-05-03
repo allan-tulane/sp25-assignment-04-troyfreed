@@ -28,11 +28,11 @@ d = O(log|V|)
 
 - **2a.**
 
-APSP(0,0,0) = 0 APSP(0,0,1) = 0 APSP(0,0,2) = 0 APSP(0,1,0) = N/A APSP(0,1,1) = -2 APSP(0,1,2) = -2 APSP(0,2,0) = N/A APSP(0,2,1) = 1 APSP(0,2,2) = -1
+vith k=0 weight = -2 k=1 weight = 1 k=2 weight = 2 starting at 0: APSP(0,0,0) = 0 APSP(0,0,1) = 0 APSP(0,0,2) = 0 APSP(0,1,0) = -2 APSP(0,1,1) = -2 APSP(0,1,2) = -2 APSP(0,2,0) = 2 APSP(0,2,1) = -1 APSP(0,2,2) = -1
 
-APSP(1,0,0) -2 APSP(1,0,1) = -2 APSP(1,0,2) = -2 APSP(1,1,0) = 0 APSP(1,1,1,) = 0 APSP(1,1,2) = 0 APSP(1,2,0) = N/A APSP(1,2,1) = 1 APSP(1,2,2) = 0
+starting at 1: APSP(1,0,0) -2 APSP(1,0,1) = -2 APSP(1,0,2) = -2 APSP(1,1,0) = 0 APSP(1,1,1,) = 0 APSP(1,1,2) = 0 APSP(1,2,0) = 1 APSP(1,2,1) = 0 APSP(1,2,2) = 0
 
-APSP(2,0,0) = N/A APSP(2,0,1) = -1 APSP(2,0,2) = -1 APSP(2,1,0) = N/A APSP(2,1,1) = 1 APSP(2,1,2) = 0 APSP(2,2,0) = 0 APSP(2,2,1) = 0 APSP(2,2,2) = 0
+starting at 2: APSP(2,0,0) = 2 APSP(2,0,1) = -1 APSP(2,0,2) = -1 APSP(2,1,0) = 1 APSP(2,1,1) = 0 APSP(2,1,2) = 0 APSP(2,2,0) = 0 APSP(2,2,1) = 0 APSP(2,2,2) = 0
 
 - **2b.**
 Yes, when you move k = 1 to k = 2 any new shortest path still avoids vertex 2, or
